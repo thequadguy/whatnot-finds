@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-35",
+  "filename": "pin-35-beauty.png",
+  "category": "beauty",
+  "template": "D_beauty",
+  "hook_type": "visual_proof",
+  "headline": "Dewy Glass Skin & Barrier Care Swatches",
+  "supporting_text": "Watch trending K-Beauty serums and cushion foundations demonstrated on real skin live.",
+  "cta_text": "EXPLORE BEAUTY \u2192",
+  "board": "K-Beauty Swatches & Skincare Deals",
+  "destination_url": "https://yourusername.github.io/beauty/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin35",
+  "pin_title": "Dewy Glass Skin & Barrier Care Swatches | Curated Discovery",
+  "pin_description": "Watch trending K-Beauty serums and cushion foundations demonstrated on real skin live. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #k-beautyfinds #glassskinroutine #liveshadeswatches",
+  "alt_text": "Dewy Glass Skin & Barrier Care Swatches - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "beauty",
+    "tmpl": "D_beauty",
+    "hook": "visual_proof",
+    "headline": "Dewy Glass Skin & Barrier Care Swatches",
+    "sub": "Watch trending K-Beauty serums and cushion foundations demonstrated on real skin live.",
+    "cta": "EXPLORE BEAUTY \u2192",
+    "bg": "#FFF1F2",
+    "text": "#881337",
+    "accent": "#BE123C",
+    "badge": "K-BEAUTY ROUTINE"
+  }
+}

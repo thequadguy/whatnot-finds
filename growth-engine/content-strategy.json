@@ -1,0 +1,58 @@
+{
+  "framework": "CREATE -> TEST -> LEARN -> IMPROVE -> REPEAT",
+  "allocationRules": {
+    "provenWinnersPct": 70,
+    "adjacentExperimentsPct": 20,
+    "newExplorationsPct": 10,
+    "maxCategoryCapPct": 40,
+    "minExplorationPerCategoryPct": 5
+  },
+  "hookTypes": [
+    {
+      "id": "curiosity_gap",
+      "name": "Curiosity Gap",
+      "formula": "What Happens When [Unexpected Action]?",
+      "example": "What Happens When a Live Auction Starts at $1?"
+    },
+    {
+      "id": "insider_secret",
+      "name": "Insider Discovery",
+      "formula": "Where [Audience] Go to Find [Items]",
+      "example": "Where Sneaker Collectors Shop Live"
+    },
+    {
+      "id": "listicle_guide",
+      "name": "5-Step Listicle",
+      "formula": "5 Things You Need to Know About [Topic]",
+      "example": "Live Pok\u00e9mon Card Auctions Explained"
+    },
+    {
+      "id": "contrarian_hook",
+      "name": "Contrarian / Intrigue",
+      "formula": "[Subject] Hit Different",
+      "example": "Japanese Pok\u00e9mon Cards Hit Different."
+    },
+    {
+      "id": "visual_proof",
+      "name": "Visual Demo Hook",
+      "formula": "Watch [Item] [Demonstrated Live]",
+      "example": "K-Beauty Finds & Live Shade Swatches"
+    },
+    {
+      "id": "niche_spotlight",
+      "name": "Niche Trend Spotlight",
+      "formula": "[Trending Niche Item] Discoveries Live",
+      "example": "Labubu & Blind Box Discoveries Live"
+    }
+  ],
+  "learningCycles": {
+    "evaluationFrequency": "Weekly",
+    "minimumSignalImpressions": 500,
+    "actionThresholds": {
+      "scale": "Outbound CTR >= 1.5% and Sample >= 2,000",
+      "iterate_hook": "High impressions (>= 2,000) but Low CTR (< 0.8%)",
+      "iterate_landing": "High CTR (>= 1.5%) but Low Referral Clicks (< 2%)",
+      "archive": "Low impressions and low CTR after 30 days"
+    }
+  }
+}

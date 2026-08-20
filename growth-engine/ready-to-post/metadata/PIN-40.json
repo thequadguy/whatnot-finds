@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-40",
+  "filename": "pin-40-discovery.png",
+  "category": "discovery",
+  "template": "A_hub",
+  "hook_type": "curiosity_gap",
+  "headline": "The Interactive Way to Discover Rare Finds",
+  "supporting_text": "Live unboxings, passionate independent hosts, and real-time chat across every collector category.",
+  "cta_text": "START EXPLORING \u2192",
+  "board": "Cool Things to Buy & Live Shopping",
+  "destination_url": "https://yourusername.github.io/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin40",
+  "pin_title": "The Interactive Way to Discover Rare Finds | Curated Discovery",
+  "pin_description": "Live unboxings, passionate independent hosts, and real-time chat across every collector category. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #liveshopping #curatedfinds",
+  "alt_text": "The Interactive Way to Discover Rare Finds - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "discovery",
+    "tmpl": "A_hub",
+    "hook": "curiosity_gap",
+    "headline": "The Interactive Way to Discover Rare Finds",
+    "sub": "Live unboxings, passionate independent hosts, and real-time chat across every collector category.",
+    "cta": "START EXPLORING \u2192",
+    "bg": "#FAF9F5",
+    "text": "#121316",
+    "accent": "#FA541C",
+    "badge": "LIVE SHOPPING"
+  }
+}

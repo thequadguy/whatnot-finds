@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-34",
+  "filename": "pin-34-collectibles.png",
+  "category": "collectibles",
+  "template": "F",
+  "hook_type": "niche_spotlight",
+  "headline": "Secret Chase Figures & Art Toys Live",
+  "supporting_text": "Watch streamers open blind boxes and inspect limited vinyl collectibles live on camera.",
+  "cta_text": "WATCH UNBOXINGS \u2192",
+  "board": "Art Toys & Collectibles Discovery",
+  "destination_url": "https://yourusername.github.io/collectibles/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin34",
+  "pin_title": "Secret Chase Figures & Art Toys Live | Curated Discovery",
+  "pin_description": "Watch streamers open blind boxes and inspect limited vinyl collectibles live on camera. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #labubufigures #popmartblindboxes #designervinylarttoys",
+  "alt_text": "Secret Chase Figures & Art Toys Live - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "collectibles",
+    "tmpl": "F",
+    "hook": "niche_spotlight",
+    "headline": "Secret Chase Figures & Art Toys Live",
+    "sub": "Watch streamers open blind boxes and inspect limited vinyl collectibles live on camera.",
+    "cta": "WATCH UNBOXINGS \u2192",
+    "bg": "#2E1065",
+    "text": "#FFFFFF",
+    "accent": "#A855F7",
+    "badge": "ART TOY GRAILS"
+  }
+}

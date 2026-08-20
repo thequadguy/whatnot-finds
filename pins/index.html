@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Pin Template Studio (1000 × 1500 px)</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="studio-body">
+
+  <header class="studio-header">
+    <div class="studio-title">
+      <h1>📌 Pinterest Pin Template Studio</h1>
+      <p>Standard 1000 × 1500 px ratio (2:3) • 6 Reusable Layouts • Instant Text Customizer</p>
+    </div>
+    <div>
+      <a href="../" class="btn-primary" style="background:#242731; padding:8px 18px; font-size:0.875rem;">&larr; Back to Landing Page</a>
+    </div>
+  </header>
+
+  <main class="studio-layout">
+    
+    <!-- Controls Sidebar -->
+    <div class="studio-controls">
+      
+      <div class="control-group">
+        <label>1. Choose Layout Template</label>
+        <div class="template-selector-grid">
+          <button class="tmpl-btn active" data-tmpl="a">A: Editorial</button>
+          <button class="tmpl-btn" data-tmpl="b">B: Bold</button>
+          <button class="tmpl-btn" data-tmpl="c">C: Discovery</button>
+          <button class="tmpl-btn" data-tmpl="d">D: Minimal</button>
+          <button class="tmpl-btn" data-tmpl="e">E: Listicle</button>
+          <button class="tmpl-btn" data-tmpl="f">F: Mystery</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>Quick Category Presets</label>
+        <div class="preset-buttons">
+          <button class="preset-btn" data-preset="pokemon">Pokémon</button>
+          <button class="preset-btn" data-preset="sneakers">Sneakers</button>
+          <button class="preset-btn" data-preset="fashion">Fashion</button>
+          <button class="preset-btn" data-preset="collectibles">Collectibles</button>
+          <button class="preset-btn" data-preset="beauty">Beauty</button>
+          <button class="preset-btn" data-preset="listicle">5 Things</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>2. Badge Text</label>
+        <input type="text" id="input-badge" value="POKÉMON DISCOVERY">
+      </div>
+
+      <div class="control-group">
+        <label>3. Pin Headline</label>
+        <textarea id="input-title" rows="3">Pokémon Collectors, You Need to See This.</textarea>
+      </div>
+
+      <div class="control-group">
+        <label>4. Supporting Description</label>
+        <textarea id="input-sub" rows="3">Live vintage booster breaks, PSA slabs, and raw singles streaming daily.</textarea>
+      </div>
+
+      <div class="control-group">
+        <label>5. Button Call to Action</label>
+        <input type="text" id="input-cta" value="EXPLORE POKÉMON">
+      </div>
+
+      <div style="background: rgba(250, 84, 28, 0.1); border: 1px solid rgba(250, 84, 28, 0.3); border-radius: 8px; padding: 12px; font-size: 0.8125rem; color: #F3F4F6;">
+        💡 <strong>How to save as image:</strong> Use your computer's screenshot shortcut (<kbd>Cmd+Shift+4</kbd> on Mac, <kbd>Win+Shift+S</kbd> on Windows) to snap the 2:3 canvas directly, or save the HTML/SVG code into Canva/Photoshop.
+      </div>
+
+    </div>
+
+    <!-- Canvas Preview Area -->
+    <div class="studio-canvas-wrap">
+      
+      <div id="pin-canvas" class="pin-canvas tmpl-a">
+        
+        <!-- Top Bar -->
+        <div class="pin-top-bar">
+          <span class="pin-badge" id="canvas-badge">POKÉMON DISCOVERY</span>
+          <span class="pin-brand">Curated Finds</span>
+        </div>
+
+        <!-- Center Content -->
+        <div class="pin-center">
+          <div class="accent-bar" style="display:none;"></div>
+          <h2 class="pin-title" id="canvas-title">Pokémon Collectors, You Need to See This.</h2>
+          
+          <!-- Conditional Listicle Preview for Template E -->
+          <div class="listicle-container" style="display:none;">
+            <div class="listicle-row"><span class="list-num">01</span> Live stream unboxings on 4K camera</div>
+            <div class="listicle-row"><span class="list-num">02</span> Sudden 15s rapid-fire auctions</div>
+            <div class="listicle-row"><span class="list-num">03</span> Direct chat with live hosts</div>
+            <div class="listicle-row"><span class="list-num">04</span> Hard-to-find vintage grails</div>
+            <div class="listicle-row"><span class="list-num">05</span> Interactive Real-Time Community</div>
+          </div>
+
+          <p class="pin-sub" id="canvas-sub">Live vintage booster breaks, PSA slabs, and raw singles streaming daily.</p>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pin-bottom">
+          <div class="pin-cta-pill">
+            <span id="canvas-cta">EXPLORE POKÉMON</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+          <span style="font-size: 0.75rem; color: #8E909D; font-weight: 600;">Swipe &amp; Tap &rarr;</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="pins.js"></script>
+</body>
+</html>

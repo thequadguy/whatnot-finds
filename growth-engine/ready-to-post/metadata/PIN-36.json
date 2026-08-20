@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-36",
+  "filename": "pin-36-deals.png",
+  "category": "deals",
+  "template": "B",
+  "hook_type": "curiosity_gap",
+  "headline": "15-Second Sudden Live Auctions Explained",
+  "supporting_text": "Experience rapid-fire bidding where deals start fast and anything can happen live.",
+  "cta_text": "CHECK LIVE DEALS \u2192",
+  "board": "Live Shopping Deals & $1 Auctions",
+  "destination_url": "https://yourusername.github.io/deals/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin36",
+  "pin_title": "15-Second Sudden Live Auctions Explained | Curated Discovery",
+  "pin_description": "Experience rapid-fire bidding where deals start fast and anything can happen live. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #liveauctions #dollarstartauctions #suddenliveshopping",
+  "alt_text": "15-Second Sudden Live Auctions Explained - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "deals",
+    "tmpl": "B",
+    "hook": "curiosity_gap",
+    "headline": "15-Second Sudden Live Auctions Explained",
+    "sub": "Experience rapid-fire bidding where deals start fast and anything can happen live.",
+    "cta": "CHECK LIVE DEALS \u2192",
+    "bg": "#064E3B",
+    "text": "#FFFFFF",
+    "accent": "#34D399",
+    "badge": "SUDDEN AUCTIONS"
+  }
+}

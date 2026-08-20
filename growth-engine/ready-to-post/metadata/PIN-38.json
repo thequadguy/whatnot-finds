@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-38",
+  "filename": "pin-38-fashion.png",
+  "category": "fashion",
+  "template": "A_custom",
+  "hook_type": "insider_secret",
+  "headline": "Where Stylists Find Archive Luxury Pieces",
+  "supporting_text": "Live boutique try-ons, measurement checks, and runway pieces showcased in real time.",
+  "cta_text": "EXPLORE RUNWAY \u2192",
+  "board": "Vintage Fashion & Designer Thrifting",
+  "destination_url": "https://yourusername.github.io/fashion/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin38",
+  "pin_title": "Where Stylists Find Archive Luxury Pieces | Curated Discovery",
+  "pin_description": "Live boutique try-ons, measurement checks, and runway pieces showcased in real time. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #vintagefashionfinds #luxurydesignerbags #livethrifthaul",
+  "alt_text": "Where Stylists Find Archive Luxury Pieces - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "fashion",
+    "tmpl": "A_custom",
+    "hook": "insider_secret",
+    "headline": "Where Stylists Find Archive Luxury Pieces",
+    "sub": "Live boutique try-ons, measurement checks, and runway pieces showcased in real time.",
+    "cta": "EXPLORE RUNWAY \u2192",
+    "bg": "#FAF7F5",
+    "text": "#1C1917",
+    "accent": "#D946EF",
+    "badge": "STYLIST CURATED"
+  }
+}

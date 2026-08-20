@@ -1,0 +1,399 @@
+/* Pin Template Studio Styling */
+:root {
+  --pin-w: 500px;
+  --pin-h: 750px; /* Scaled 2:3 ratio representing 1000x1500px */
+}
+
+.studio-body {
+  background-color: #0F1013;
+  color: #F3F4F6;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.studio-header {
+  padding: 1.5rem 2rem;
+  background: #181A20;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.studio-title h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.studio-title p {
+  font-size: 0.875rem;
+  color: #9CA3AF;
+}
+
+.studio-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .studio-layout {
+    grid-template-columns: 380px 1fr;
+  }
+}
+
+.studio-controls {
+  background: #181A20;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.control-group label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #D1D5DB;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.control-group input, .control-group select, .control-group textarea {
+  width: 100%;
+  background: #242731;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9375rem;
+}
+
+.control-group input:focus, .control-group select:focus, .control-group textarea:focus {
+  outline: 2px solid #FA541C;
+  border-color: transparent;
+}
+
+.template-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.tmpl-btn {
+  background: #242731;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9CA3AF;
+  padding: 8px 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.tmpl-btn:hover {
+  background: #2E323F;
+  color: #FFFFFF;
+}
+
+.tmpl-btn.active {
+  background: #FA541C;
+  color: #FFFFFF;
+  border-color: #FA541C;
+}
+
+.preset-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.preset-btn {
+  background: #242731;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #D1D5DB;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.preset-btn:hover {
+  background: #FA541C;
+  color: white;
+}
+
+/* Studio Canvas Area */
+.studio-canvas-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #14161C;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 2.5rem 1rem;
+}
+
+/* Base Pinterest Pin (Scaled 2:3 Canvas) */
+.pin-canvas {
+  width: var(--pin-w);
+  height: var(--pin-h);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.75rem;
+  transition: all 0.3s ease;
+}
+
+/* -------------------------------------------------------------
+   TEMPLATE A: EDITORIAL / LUXURY
+   ------------------------------------------------------------- */
+.tmpl-a {
+  background: #FAF8F5;
+  color: #121316;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tmpl-a .pin-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 1rem;
+}
+
+.tmpl-a .pin-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #FA541C;
+}
+
+.tmpl-a .pin-brand {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: #121316;
+}
+
+.tmpl-a .pin-center {
+  margin: auto 0;
+}
+
+.tmpl-a .pin-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #121316;
+  margin-bottom: 1rem;
+}
+
+.tmpl-a .pin-sub {
+  font-size: 1.05rem;
+  color: #555866;
+  line-height: 1.5;
+}
+
+.tmpl-a .pin-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tmpl-a .pin-cta-pill {
+  background: #121316;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* -------------------------------------------------------------
+   TEMPLATE B: BOLD TYPOGRAPHY
+   ------------------------------------------------------------- */
+.tmpl-b {
+  background: #121316;
+  color: #FFFFFF;
+}
+
+.tmpl-b .pin-badge {
+  background: #FA541C;
+  color: #FFFFFF;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  align-self: flex-start;
+}
+
+.tmpl-b .pin-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.85rem;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+}
+
+.tmpl-b .pin-title span {
+  color: #FA541C;
+}
+
+.tmpl-b .pin-sub {
+  font-size: 1.1rem;
+  color: #A3A6B4;
+  line-height: 1.5;
+}
+
+.tmpl-b .pin-cta-pill {
+  background: #FA541C;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* -------------------------------------------------------------
+   TEMPLATE C: PRODUCT DISCOVERY GRID
+   ------------------------------------------------------------- */
+.tmpl-c {
+  background: #F3F1EA;
+  color: #121316;
+}
+
+.tmpl-c .grid-preview-box {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.tmpl-c .grid-item-card {
+  background: #FAF9F5;
+  border-radius: 10px;
+  padding: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tmpl-c .pin-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.15rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+/* -------------------------------------------------------------
+   TEMPLATE D: MINIMALIST MODERN
+   ------------------------------------------------------------- */
+.tmpl-d {
+  background: #FFFFFF;
+  color: #121316;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tmpl-d .pin-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.tmpl-d .accent-bar {
+  width: 60px;
+  height: 4px;
+  background: #FA541C;
+  margin-bottom: 1.5rem;
+}
+
+/* -------------------------------------------------------------
+   TEMPLATE E: "5 THINGS" LISTICLE
+   ------------------------------------------------------------- */
+.tmpl-e {
+  background: #181A20;
+  color: #FFFFFF;
+}
+
+.tmpl-e .listicle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.tmpl-e .listicle-row {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.tmpl-e .list-num {
+  color: #FA541C;
+  font-weight: 800;
+}
+
+/* -------------------------------------------------------------
+   TEMPLATE F: CURIOSITY / MYSTERY DROP
+   ------------------------------------------------------------- */
+.tmpl-f {
+  background: radial-gradient(circle at top right, #2E1065 0%, #0F172A 100%);
+  color: #FFFFFF;
+}
+
+.tmpl-f .mystery-glow-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}

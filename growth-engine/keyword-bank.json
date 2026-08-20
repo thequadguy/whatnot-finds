@@ -1,0 +1,144 @@
+{
+  "pokemon": {
+    "category": "Pok\u00e9mon & TCG",
+    "primary": [
+      "pokemon cards",
+      "pokemon slabs",
+      "japanese pokemon cards",
+      "pokemon booster box",
+      "tcg live breaks"
+    ],
+    "secondary": [
+      "vintage pokemon cards",
+      "psa 10 charizard",
+      "pokemon card unboxing",
+      "graded pokemon singles",
+      "vstar universe"
+    ],
+    "longtail": [
+      "where to buy authentic pokemon cards live",
+      "what happens during a pokemon card break",
+      "japanese pokemon card unboxing live video",
+      "how to inspect pokemon card centering live"
+    ],
+    "searchIntent": "commercial_investigation"
+  },
+  "sneakers": {
+    "category": "Sneakers & Streetwear",
+    "primary": [
+      "retro sneakers",
+      "deadstock sneakers",
+      "live sneaker auctions",
+      "streetwear finds",
+      "sneakerhead drops"
+    ],
+    "secondary": [
+      "air jordan 1 retro",
+      "nike dunk low",
+      "y2k streetwear hoodies",
+      "sneaker condition checks",
+      "vintage streetwear finds"
+    ],
+    "longtail": [
+      "live sneaker auctions starting at 1 dollar",
+      "where to buy deadstock sneakers on live stream",
+      "how to check sneaker stitching on live camera",
+      "streetwear thrifting live unboxings"
+    ],
+    "searchIntent": "commercial_investigation"
+  },
+  "fashion": {
+    "category": "Designer Fashion & Vintage",
+    "primary": [
+      "vintage fashion finds",
+      "luxury designer bags",
+      "live thrift haul",
+      "y2k archive fashion",
+      "designer handbag unboxing"
+    ],
+    "secondary": [
+      "vintage leather jackets",
+      "curated designer clothing",
+      "stylist try-on haul",
+      "archive denim",
+      "vintage designer accessories"
+    ],
+    "longtail": [
+      "where to shop live vintage fashion try ons",
+      "inspect designer bag stitching on live video",
+      "y2k archive fashion live rack pulls",
+      "how live fashion auctions work"
+    ],
+    "searchIntent": "commercial_investigation"
+  },
+  "collectibles": {
+    "category": "Art Toys & Collectibles",
+    "primary": [
+      "labubu figures",
+      "pop mart blind boxes",
+      "designer vinyl art toys",
+      "anime scale statues",
+      "rare collectibles unboxing"
+    ],
+    "secondary": [
+      "secret chase figures",
+      "skullpanda blind box",
+      "vaulted action figures",
+      "licensed anime statues",
+      "art toy collectors"
+    ],
+    "longtail": [
+      "where to watch live pop mart blind box openings",
+      "labubu secret chase unboxing live stream",
+      "live anime statue condition inspections",
+      "vintage collectible toy live auctions"
+    ],
+    "searchIntent": "commercial_investigation"
+  },
+  "beauty": {
+    "category": "Beauty & Skincare",
+    "primary": [
+      "k-beauty finds",
+      "glass skin routine",
+      "live shade swatches",
+      "viral skincare products",
+      "niche fragrance discoveries"
+    ],
+    "secondary": [
+      "korean barrier creams",
+      "snail mucin essence",
+      "cushion foundation swatches",
+      "niche perfume notes",
+      "clean skincare routine"
+    ],
+    "longtail": [
+      "k-beauty lip tint swatches on real skin live",
+      "live skincare routine demonstrations",
+      "niche perfume unboxings and scent reviews",
+      "how to choose foundation shade on live stream"
+    ],
+    "searchIntent": "commercial_investigation"
+  },
+  "deals": {
+    "category": "Deals & $1 Auctions",
+    "primary": [
+      "live auctions",
+      "dollar start auctions",
+      "sudden live shopping",
+      "bargain shopping finds",
+      "live stream deals"
+    ],
+    "secondary": [
+      "unscripted bidding",
+      "flash auction drops",
+      "15 second sudden auctions",
+      "live marketplace finds"
+    ],
+    "longtail": [
+      "what happens when a live auction starts at 1 dollar",
+      "how sudden live shopping auctions work",
+      "best live video shopping apps for deals"
+    ],
+    "searchIntent": "informational_transactional"
+  }
+}

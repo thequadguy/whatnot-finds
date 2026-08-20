@@ -1,0 +1,59 @@
+{
+  "lastUpdated": "2026-08-20",
+  "status": "INITIAL_BASELINE",
+  "confidenceLevel": "Hypothesis / Baseline (Pending Live Pinterest Data)",
+  "topCategories": [
+    {
+      "category": "pokemon",
+      "rank": 1,
+      "status": "EXPAND",
+      "rationale": "High organic search volume and fervent collector engagement on Pinterest."
+    },
+    {
+      "category": "collectibles",
+      "rank": 2,
+      "status": "EXPAND",
+      "rationale": "Labubu/Pop Mart trending virally with high visual interest."
+    },
+    {
+      "category": "sneakers",
+      "rank": 3,
+      "status": "TEST",
+      "rationale": "High dollar value items, strong question-hook engagement."
+    }
+  ],
+  "topHooks": [
+    {
+      "hookType": "curiosity_gap",
+      "score": 9.5,
+      "example": "What Happens When a Live Auction Starts at $1?"
+    },
+    {
+      "hookType": "niche_spotlight",
+      "score": 9.2,
+      "example": "Labubu & Blind Box Discoveries Live"
+    },
+    {
+      "hookType": "listicle_guide",
+      "score": 8.8,
+      "example": "Live Pok\u00e9mon Card Auctions Explained"
+    }
+  ],
+  "topTemplates": [
+    {
+      "templateId": "B",
+      "name": "Bold Typography",
+      "strength": "Maximum mobile thumbnail contrast and scroll-stopping power."
+    },
+    {
+      "templateId": "F",
+      "name": "Curiosity / Mystery Glow",
+      "strength": "High click curiosity for unscripted discoveries."
+    },
+    {
+      "templateId": "E",
+      "name": "Listicle / 5 Steps",
+      "strength": "High Pinterest save rate and perceived information value."
+    }
+  ]
+}

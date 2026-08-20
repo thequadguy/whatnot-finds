@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-31",
+  "filename": "pin-31-pokemon.png",
+  "category": "pokemon",
+  "template": "E",
+  "hook_type": "listicle_guide",
+  "headline": "5 Secrets Pok\u00e9mon Collectors Look for Live",
+  "supporting_text": "Centering, holo foil scratch checks, corner whitening, and live pack pulls explained.",
+  "cta_text": "SEE LIVE GUIDE \u2192",
+  "board": "Pok\u00e9mon Cards & TCG Live Breaks",
+  "destination_url": "https://yourusername.github.io/pokemon/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin31",
+  "pin_title": "5 Secrets Pok\u00e9mon Collectors Look for Live | Curated Discovery",
+  "pin_description": "Centering, holo foil scratch checks, corner whitening, and live pack pulls explained. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #pokemoncards #pokemonslabs #japanesepokemoncards",
+  "alt_text": "5 Secrets Pok\u00e9mon Collectors Look for Live - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "pokemon",
+    "tmpl": "E",
+    "hook": "listicle_guide",
+    "headline": "5 Secrets Pok\u00e9mon Collectors Look for Live",
+    "sub": "Centering, holo foil scratch checks, corner whitening, and live pack pulls explained.",
+    "cta": "SEE LIVE GUIDE \u2192",
+    "bg": "#181A20",
+    "text": "#FFFFFF",
+    "accent": "#FA541C",
+    "badge": "POK\u00c9MON SECRETS"
+  }
+}

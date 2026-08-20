@@ -1,0 +1,29 @@
+{
+  "pin_id": "PIN-37",
+  "filename": "pin-37-pokemon.png",
+  "category": "pokemon",
+  "template": "D_japanese",
+  "hook_type": "contrarian_hook",
+  "headline": "Why Collectors Are Hunting Japanese Booster Boxes",
+  "supporting_text": "Watch sealed booster boxes and illustration rare singles opened on live high-definition streams.",
+  "cta_text": "EXPLORE JAPANESE TCG \u2192",
+  "board": "Pok\u00e9mon Cards & TCG Live Breaks",
+  "destination_url": "https://yourusername.github.io/pokemon/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin37",
+  "pin_title": "Why Collectors Are Hunting Japanese Booster Boxes | Curated Discovery",
+  "pin_description": "Watch sealed booster boxes and illustration rare singles opened on live high-definition streams. Discover live unboxings, detailed condition checks, and interactive auctions. Tap to explore! #pokemoncards #pokemonslabs #japanesepokemoncards",
+  "alt_text": "Why Collectors Are Hunting Japanese Booster Boxes - High definition live shopping and collector discovery guide.",
+  "status": "READY_FOR_APPROVAL",
+  "created_date": "2026-08-20",
+  "theme": {
+    "cat": "pokemon",
+    "tmpl": "D_japanese",
+    "hook": "contrarian_hook",
+    "headline": "Why Collectors Are Hunting Japanese Booster Boxes",
+    "sub": "Watch sealed booster boxes and illustration rare singles opened on live high-definition streams.",
+    "cta": "EXPLORE JAPANESE TCG \u2192",
+    "bg": "#1A0505",
+    "text": "#FFFFFF",
+    "accent": "#EF4444",
+    "badge": "JAPANESE IMPORTS"
+  }
+}

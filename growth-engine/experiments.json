@@ -1,0 +1,28 @@
+{
+  "activeExperiments": [
+    {
+      "id": "EXP-CTA-001",
+      "type": "cta_text",
+      "hypothesis": "'Explore Live Stream Deals' will drive higher referral CTR than 'Explore Whatnot' on the main landing page.",
+      "control": "Explore Whatnot",
+      "variantA": "Explore Live Stream Deals",
+      "variantB": "See What's Live Now",
+      "status": "IN_PROGRESS",
+      "minSampleSize": 500,
+      "currentSamples": 0,
+      "results": "Pending traffic accumulation"
+    },
+    {
+      "id": "EXP-HOOK-001",
+      "type": "pin_hook_angle",
+      "hypothesis": "Questions ($1 auction curiosity) will achieve >= 40% higher outbound CTR than generic declarative titles.",
+      "control": "Sneaker Finds You Need to See",
+      "variant": "What Happens When a Live Sneaker Auction Starts at $1?",
+      "status": "TESTING",
+      "minSampleSize": 1000,
+      "currentSamples": 0,
+      "results": "Pending Pinterest analytics import"
+    }
+  ],
+  "completedExperiments": []
+}

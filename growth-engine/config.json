@@ -1,0 +1,76 @@
+{
+  "referralUrl": "https://whatnot.com/invite/gittles",
+  "websiteBaseUrl": "https://yourusername.github.io",
+  "campaignName": "whatnot_referral",
+  "utmSource": "pinterest",
+  "utmMedium": "organic",
+  "utmCampaign": "whatnot_referral",
+  "pinWidth": 1000,
+  "pinHeight": 1500,
+  "categories": [
+    "pokemon",
+    "sneakers",
+    "fashion",
+    "collectibles",
+    "beauty",
+    "vintage",
+    "deals",
+    "discovery"
+  ],
+  "templates": [
+    {"id": "A", "name": "Editorial / Luxury", "type": "editorial"},
+    {"id": "B", "name": "Bold Typography", "type": "bold"},
+    {"id": "C", "name": "Product Discovery Grid", "type": "grid"},
+    {"id": "D", "name": "Minimalist Accent", "type": "minimal"},
+    {"id": "E", "name": "Listicle / 5 Steps", "type": "listicle"},
+    {"id": "F", "name": "Curiosity / Mystery Glow", "type": "mystery"}
+  ],
+  "scoringWeights": {
+    "outboundCtr": 0.35,
+    "outboundClicks": 0.25,
+    "saveRate": 0.20,
+    "referralClicks": 0.20
+  },
+  "sampleSizeThresholds": {
+    "insufficient": 500,
+    "earlySignal": 2000,
+    "usableSignal": 5000,
+    "strongSignal": 10000
+  },
+  "contentAllocation": {
+    "provenConcepts": 0.70,
+    "adjacentExperiments": 0.20,
+    "newExplorations": 0.10,
+    "maxSingleCategoryCap": 0.40
+  },
+  "defaultCategoryDistribution": {
+    "pokemon": 0.30,
+    "sneakers": 0.15,
+    "fashion": 0.15,
+    "collectibles": 0.15,
+    "beauty": 0.10,
+    "vintage": 0.05,
+    "deals": 0.05,
+    "discovery": 0.05
+  },
+  "boards": {
+    "pokemon": "Pokémon Cards & TCG Live Breaks",
+    "sneakers": "Sneaker Grails & Streetwear Auctions",
+    "fashion": "Vintage Fashion & Designer Thrifting",
+    "collectibles": "Art Toys & Collectibles Discovery",
+    "beauty": "K-Beauty Swatches & Skincare Deals",
+    "vintage": "Vintage Clothing & Retro Finds",
+    "deals": "Live Shopping Deals & $1 Auctions",
+    "discovery": "Cool Things to Buy & Live Shopping"
+  },
+  "categoryLandingPaths": {
+    "pokemon": "/pokemon/",
+    "sneakers": "/sneakers/",
+    "fashion": "/fashion/",
+    "collectibles": "/collectibles/",
+    "beauty": "/beauty/",
+    "vintage": "/vintage/",
+    "deals": "/deals/",
+    "discovery": "/"
+  }
+}

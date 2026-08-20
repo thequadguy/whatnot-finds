@@ -1,0 +1,53 @@
+{
+  "schedule": [
+    {
+      "day": 1,
+      "date": "Day 1",
+      "pin_id": "PIN-01",
+      "category": "pokemon",
+      "status": "SCHEDULED"
+    },
+    {
+      "day": 2,
+      "date": "Day 2",
+      "pin_id": "PIN-09",
+      "category": "sneakers",
+      "status": "SCHEDULED"
+    },
+    {
+      "day": 3,
+      "date": "Day 3",
+      "pin_id": "PIN-14",
+      "category": "fashion",
+      "status": "SCHEDULED"
+    },
+    {
+      "day": 4,
+      "date": "Day 4",
+      "pin_id": "PIN-19",
+      "category": "collectibles",
+      "status": "SCHEDULED"
+    },
+    {
+      "day": 5,
+      "date": "Day 5",
+      "pin_id": "PIN-24",
+      "category": "beauty",
+      "status": "SCHEDULED"
+    },
+    {
+      "day": 6,
+      "date": "Day 6",
+      "pin_id": "PIN-28",
+      "category": "discovery",
+      "status": "SCHEDULED"
+    },
+    {
+      "day": 7,
+      "date": "Day 7",
+      "pin_id": "PIN-02",
+      "category": "pokemon",
+      "status": "SCHEDULED"
+    }
+  ]
+}
