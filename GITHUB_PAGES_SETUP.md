@@ -8,7 +8,7 @@ Your repository has been pushed to GitHub on branch `main`.
 
 - **GitHub Repository:** [https://github.com/thequadguy/whatnot-finds](https://github.com/thequadguy/whatnot-finds)
 - **Current Branch:** `main`
-- **Latest Commit:** `7edf3bd` (`Build Pinterest to Whatnot referral growth engine`)
+- **Latest Commit:** `543ef48`
 - **Push Status:** **SUCCESSFUL (Up to date with `origin/main`)**
 - **Expected Live URL:** `https://thequadguy.github.io/whatnot-finds/`
 
@@ -19,12 +19,9 @@ Your repository has been pushed to GitHub on branch `main`.
 1. Open your repository settings directly at:  
    👉 **[https://github.com/thequadguy/whatnot-finds/settings/pages](https://github.com/thequadguy/whatnot-finds/settings/pages)**
 
-2. Under **Build and deployment &rarr; Source**:
-   - Select **Deploy from a branch**.
+2. Under **Build and deployment &rarr; Source**, select **Deploy from a branch**.
 
-3. Under **Branch**:
-   - Select **`main`** and **`/(root)`**.
-   - Click **Save**.
+3. Under **Branch**, select **`main`** and **`/(root)`**, then click **Save**.
 
 ---
 
