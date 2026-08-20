@@ -53,9 +53,12 @@ def compliance_check(text):
     return issues
 
 def import_csv_data(csv_file_path):
-    """Imports manual CSV performance data into performance-data.json."""
+    """
+    Robust, fault-tolerant CSV importer for Pinterest Analytics exports.
+    Normalizes column aliases, validates numeric ranges, and reports skipped/missing rows without inventing data.
+    """
     if not os.path.exists(csv_file_path):
-        print(f"File not found: {csv_file_path}")
+        print(f"⚠️ Import file not found at: {csv_file_path}")
         return False
 
     perf_data = load_json(PERF_PATH)
@@ -63,28 +66,90 @@ def import_csv_data(csv_file_path):
     weights = config.get("scoringWeights", {})
 
     imported_count = 0
-    with open(csv_file_path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            pid = row.get("pin_id", "").strip().upper()
-            if not pid:
+    skipped_count = 0
+    missing_data_count = 0
+    duplicate_count = 0
+    processed_pids = set()
+
+    with open(csv_file_path, "r", encoding="utf-8", errors="replace") as f:
+        reader = csv.reader(f)
+        try:
+            raw_headers = next(reader)
+        except StopIteration:
+            print("⚠️ CSV file is empty.")
+            return False
+
+        # Build column alias map
+        header_map = {}
+        for idx, h in enumerate(raw_headers):
+            clean_h = h.strip().lower().replace(" ", "_").replace("-", "_")
+            if clean_h in ["pin_id", "pin", "id", "pin_name", "item_id"]:
+                header_map["pin_id"] = idx
+            elif clean_h in ["impressions", "imprs", "views", "pin_impressions"]:
+                header_map["impressions"] = idx
+            elif clean_h in ["saves", "repins", "pin_saves", "saved"]:
+                header_map["saves"] = idx
+            elif clean_h in ["outbound_clicks", "clicks", "pin_clicks", "link_clicks", "destination_clicks"]:
+                header_map["outbound_clicks"] = idx
+            elif clean_h in ["landing_sessions", "sessions", "visits", "landing_page_views"]:
+                header_map["landing_sessions"] = idx
+            elif clean_h in ["referral_clicks", "cta_clicks", "whatnot_clicks", "referrals"]:
+                header_map["referral_clicks"] = idx
+            elif clean_h in ["signups", "conversions", "new_users"]:
+                header_map["signups"] = idx
+
+        if "pin_id" not in header_map:
+            print("❌ Error: CSV must contain a 'Pin ID' or 'Pin' column.")
+            return False
+
+        for row_idx, row in enumerate(reader, start=2):
+            if not row or not any(row):
+                continue
+            
+            try:
+                pid_val = row[header_map["pin_id"]].strip().upper()
+            except IndexError:
+                skipped_count += 1
                 continue
 
-            try:
-                imp = int(row.get("impressions", 0))
-                saves = int(row.get("saves", 0))
-                clicks = int(row.get("outbound_clicks", 0))
-                sessions = int(row.get("landing_sessions", 0))
-                referrals = int(row.get("referral_clicks", 0))
-                signups = row.get("signups", "Unavailable").strip()
-            except ValueError:
+            if not pid_val:
+                skipped_count += 1
                 continue
+
+            if pid_val in processed_pids:
+                duplicate_count += 1
+                continue
+            processed_pids.add(pid_val)
+
+            # Extract numeric metrics safely
+            def get_int(key):
+                if key in header_map and header_map[key] < len(row):
+                    val = row[header_map[key]].strip().replace(",", "").replace("%", "")
+                    try:
+                        return max(0, int(float(val)))
+                    except ValueError:
+                        return 0
+                return 0
+
+            imp = get_int("impressions")
+            saves = get_int("saves")
+            clicks = get_int("outbound_clicks")
+            sessions = get_int("landing_sessions")
+            referrals = get_int("referral_clicks")
+
+            signups_str = "Unavailable"
+            if "signups" in header_map and header_map["signups"] < len(row):
+                raw_sig = row[header_map["signups"]].strip()
+                if raw_sig:
+                    signups_str = raw_sig
+
+            if imp == 0 and clicks == 0 and saves == 0:
+                missing_data_count += 1
 
             ctr = (clicks / imp * 100) if imp > 0 else 0.0
             save_rate = (saves / imp * 100) if imp > 0 else 0.0
             conv_rate = (referrals / sessions * 100) if sessions > 0 else 0.0
 
-            # Composite Score calculation
             composite_score = (
                 (ctr * weights.get("outboundCtr", 0.35)) +
                 (clicks * weights.get("outboundClicks", 0.25)) +
@@ -92,7 +157,6 @@ def import_csv_data(csv_file_path):
                 (referrals * weights.get("referralClicks", 0.20))
             )
 
-            # Signal Confidence Tagging
             thresholds = config.get("sampleSizeThresholds", {})
             if imp < thresholds.get("insufficient", 500):
                 sig = "INSUFFICIENT_DATA"
@@ -103,10 +167,9 @@ def import_csv_data(csv_file_path):
             else:
                 sig = "STRONG_SIGNAL"
 
-            # Update in performance array
             found = False
             for p in perf_data["pins"]:
-                if p["pin_id"] == pid:
+                if p["pin_id"] == pid_val or p["pin_id"].replace("-", "") == pid_val.replace("-", ""):
                     p["impressions"] = imp
                     p["saves"] = saves
                     p["outbound_clicks"] = clicks
@@ -115,16 +178,18 @@ def import_csv_data(csv_file_path):
                     p["landing_sessions"] = sessions
                     p["referral_clicks"] = referrals
                     p["landing_conversion_rate"] = round(conv_rate, 2)
-                    p["signups"] = signups
+                    p["signups"] = signups_str
                     p["composite_score"] = round(composite_score, 2)
                     p["signal_level"] = sig
-                    p["status"] = "ACTIVE_TRACKED" if imp > 0 else "WAITING_FOR_DATA"
+                    p["status"] = "PUBLISHED_ACTIVE" if imp > 0 else "READY_TO_POST"
                     p["last_updated"] = datetime.date.today().isoformat()
                     found = True
                     break
 
             if found:
                 imported_count += 1
+            else:
+                skipped_count += 1
 
     # Recalculate totals
     total_imp = sum(p.get("impressions", 0) for p in perf_data["pins"])
@@ -144,7 +209,15 @@ def import_csv_data(csv_file_path):
     perf_data["totalReferralClicks"] = total_referrals
 
     save_json(PERF_PATH, perf_data)
-    print(f"✅ Successfully imported and calculated metrics for {imported_count} pins.")
+
+    print("\n==================================================")
+    print("📊 PINTEREST DATA IMPORT SUMMARY")
+    print("==================================================")
+    print(f"  ✅ Rows Imported:     {imported_count}")
+    print(f"  ⏭️ Rows Skipped:      {skipped_count}")
+    print(f"  ⚠️ Missing Data Rows: {missing_data_count}")
+    print(f"  🔁 Duplicates Filtered:{duplicate_count}")
+    print("==================================================\n")
     return True
 
 def run_analysis():
