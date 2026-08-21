@@ -182,6 +182,10 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: all 0.2s ease;
 }
 
@@ -204,6 +208,112 @@ body {
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+
+/* "TODAY" Action Panel */
+.today-panel {
+  background: linear-gradient(135deg, #181C28 0%, #11141F 100%);
+  border: 1px solid rgba(250, 84, 28, 0.35);
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.today-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.today-badge {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--brand-orange);
+}
+
+.system-pills {
+  display: flex;
+  gap: 10px;
+}
+
+.sys-pill {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--brand-emerald);
+  background: rgba(16, 185, 129, 0.1);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.today-action-card {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.next-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--brand-amber);
+  margin-bottom: 4px;
+}
+
+.next-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.next-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.today-action-right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-copy {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-copy:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.btn-copy-accent {
+  background: var(--brand-orange);
+  border-color: var(--brand-orange);
+}
+
+.btn-copy-accent:hover {
+  background: #FF6E38;
 }
 
 /* Pipeline Track */
@@ -270,19 +380,12 @@ body {
 .step-complete .step-label { color: #FFFFFF; }
 
 .step-active {
-  border-color: rgba(245, 158, 11, 0.4);
-  background: rgba(245, 158, 11, 0.08);
-}
-.step-active .step-num { background: var(--brand-amber); color: #000; }
-.step-active .step-label { color: #FFFFFF; }
-
-.step-human {
   border-color: rgba(250, 84, 28, 0.5);
   background: rgba(250, 84, 28, 0.12);
   box-shadow: 0 0 15px rgba(250, 84, 28, 0.2);
 }
-.step-human .step-num { background: var(--brand-orange); color: #FFF; }
-.step-human .step-label { color: var(--brand-orange); font-weight: 800; }
+.step-active .step-num { background: var(--brand-orange); color: #FFF; }
+.step-active .step-label { color: var(--brand-orange); font-weight: 800; }
 
 .pipeline-arrow {
   color: var(--text-muted);
@@ -397,21 +500,6 @@ body {
 .badge-purple { color: var(--brand-purple); background: rgba(168, 85, 247, 0.12); border-color: rgba(168, 85, 247, 0.25); }
 .badge-emerald { color: var(--brand-emerald); background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.25); }
 
-/* Experiment Banner */
-.experiment-banner {
-  background: rgba(56, 189, 248, 0.08);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  border-radius: 14px;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.exp-icon { font-size: 24px; }
-.exp-body { font-size: 14px; color: #E0F2FE; line-height: 1.45; }
-.exp-body strong { color: #38BDF8; }
-
 /* Two Column Grid */
 .two-col-grid {
   display: grid;
@@ -461,14 +549,20 @@ body {
 .pin-queue-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .queue-item {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 12px 16px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.queue-header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -478,6 +572,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .queue-id {
@@ -494,24 +589,55 @@ body {
   border-radius: 4px;
 }
 
+.board-tag {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.queue-priority {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--brand-emerald);
+  background: rgba(16, 185, 129, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 .cat-pokemon { background: #FEF3C7; color: #B45309; }
 .cat-sneakers { background: #E0F2FE; color: #0369A1; }
 .cat-fashion { background: #FDF4FF; color: #A21CAF; }
 .cat-collectibles { background: #EDE9FE; color: #6D28D9; }
 .cat-beauty { background: #FFE4E6; color: #BE123C; }
+.cat-deals { background: #DCFCE7; color: #15803D; }
 
 .queue-title {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: #FFFFFF;
-  flex: 1;
-  margin: 0 14px;
 }
 
-.queue-status {
+.queue-actions-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.btn-mini {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
   font-size: 11px;
-  font-weight: 800;
-  color: var(--brand-amber);
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-mini:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
 }
 
 .panel-footer {
@@ -572,6 +698,30 @@ body {
   font-size: 12px;
   color: #FED7AA;
   line-height: 1.45;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--brand-orange);
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.toast-show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 900px) {

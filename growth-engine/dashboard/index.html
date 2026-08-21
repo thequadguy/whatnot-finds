@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Growth Engine — Pinterest → Whatnot Funnel Intelligence</title>
+  <title>Growth Engine Command Center — Whatnot Finds</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
     <div class="nav-left">
       <div class="engine-logo">
         <span class="logo-dot"></span>
-        <span>WHATNOT FINDS • GROWTH ENGINE</span>
+        <span>WHATNOT FINDS • COMMAND CENTER</span>
       </div>
-      <span class="version-badge">v3.0 • Semi-Autonomous</span>
-      <span class="data-mode-badge data-mode-none" id="data-status-badge">NO DATA YET (Awaiting Pinterest Upload &amp; Analytics)</span>
+      <span class="version-badge">v4.0 • Semi-Autonomous</span>
+      <span class="data-mode-badge data-mode-none" id="data-status-badge">NO DATA YET (Awaiting Pinterest Import)</span>
     </div>
     <div class="nav-right">
       <div class="status-indicator">
@@ -39,36 +39,60 @@
     <header class="dash-header">
       <div>
         <h1>Pinterest → Whatnot Operating System</h1>
-        <p class="subtitle">Independent Discovery Guide • 40 High-CTR Graphics • Semi-Automated Learning Pipeline</p>
+        <p class="subtitle">Independent Discovery Guide • 40 High-CTR Visual Graphics • 10 Mapped Boards • $0 Operating Cost</p>
       </div>
       <div class="header-actions">
-        <a href="../ready-to-post/csv/pinterest-final-upload-manifest.csv" download class="btn btn-secondary">📥 Download Manifest CSV</a>
-        <button class="btn btn-primary" onclick="alert('Run ./growth-engine/run.sh in your terminal to execute data import, analysis, and rendering.')">⚡ Run Engine Pipeline</button>
+        <a href="../ready-to-post/csv/pinterest-final-upload-manifest.csv" download class="btn btn-secondary">📥 Download 40-Pin CSV</a>
+        <button class="btn btn-primary" onclick="alert('Run ./growth-engine/run.sh in your terminal to execute data import, learning analysis, and graphic generation.')">⚡ Run Engine Pipeline</button>
       </div>
     </header>
 
+    <!-- "TODAY" Action Panel -->
+    <section class="today-panel">
+      <div class="today-header">
+        <div class="today-badge">📅 TODAY'S ACTION CENTER</div>
+        <div class="system-pills">
+          <span class="sys-pill">✓ Landing Pages: Healthy</span>
+          <span class="sys-pill">✓ Tracking: Validated</span>
+          <span class="sys-pill">✓ 40 Pins Ready</span>
+        </div>
+      </div>
+      <div class="today-action-card">
+        <div class="today-action-left">
+          <div class="next-label">⚡ NEXT RECOMMENDED ACTION:</div>
+          <div class="next-title">Upload Priority Pin #28 to "Deal Alerts &amp; Restocks"</div>
+          <div class="next-desc">High-contrast curiosity hook starting at $1. Highest projected click-through rate.</div>
+        </div>
+        <div class="today-action-right">
+          <button class="btn-copy" onclick="copyText('What Happens When a Live Auction Starts at $1?', 'Title copied!')">Copy Title</button>
+          <button class="btn-copy" onclick="copyText('Fast-paced 15-second sudden death live bidding where auctions start at just $1 and anything can happen on stream.', 'Description copied!')">Copy Description</button>
+          <button class="btn-copy btn-copy-accent" onclick="copyText('https://thequadguy.github.io/whatnot-finds/deals/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin28', 'URL copied!')">Copy Destination URL</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Lifecycle Status Progression Bar -->
     <section class="pipeline-section">
-      <div class="pipeline-title">📌 PIN LIFECYCLE &amp; HUMAN-IN-THE-LOOP APPROVAL PIPELINE</div>
+      <div class="pipeline-title">📌 PIN LIFECYCLE &amp; HUMAN APPROVAL WORKFLOW</div>
       <div class="pipeline-track">
         <div class="pipeline-step step-complete">
           <div class="step-num">1</div>
-          <div class="step-label">READY (40 Pins)</div>
+          <div class="step-label">GENERATED (40)</div>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step step-complete">
+          <div class="step-num">2</div>
+          <div class="step-label">QA CHECK (40 Passed)</div>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-step step-active">
-          <div class="step-num">2</div>
-          <div class="step-label">UPLOADED (0)</div>
-        </div>
-        <div class="pipeline-arrow">&rarr;</div>
-        <div class="pipeline-step">
           <div class="step-num">3</div>
-          <div class="step-label">SCHEDULED</div>
+          <div class="step-label">READY TO POST (40)</div>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-step">
           <div class="step-num">4</div>
-          <div class="step-label">PUBLISHED</div>
+          <div class="step-label">PUBLISHED (0)</div>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-step">
@@ -81,14 +105,14 @@
     <!-- KPI Summary Grid -->
     <section class="kpi-grid">
       <div class="kpi-card highlight-brand">
-        <div class="kpi-label">TOTAL PINS CREATED</div>
+        <div class="kpi-label">TOTAL PINS IN SYSTEM</div>
         <div class="kpi-value" id="val-total-pins">40</div>
         <div class="kpi-subtext">30 Batch #01 + 10 Batch #02</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-label">READY FOR MANUAL UPLOAD</div>
         <div class="kpi-value" style="color: var(--brand-emerald);">40</div>
-        <div class="kpi-subtext">Manifest &amp; Guides Generated</div>
+        <div class="kpi-subtext">Manifest &amp; Packs Built</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-label">CURRENTLY PUBLISHED</div>
@@ -96,23 +120,23 @@
         <div class="kpi-subtext">Awaiting Pinterest Upload</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">PINTEREST IMPRESSIONS</div>
+        <div class="kpi-label">TOTAL IMPRESSIONS</div>
         <div class="kpi-value" id="val-impressions">0</div>
         <div class="kpi-subtext" id="sub-impressions">No data yet</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">PINTEREST SAVES</div>
+        <div class="kpi-label">TOTAL SAVES</div>
         <div class="kpi-value" id="val-saves">0</div>
         <div class="kpi-subtext">No data yet</div>
       </div>
       <div class="kpi-card highlight-card">
-        <div class="kpi-label">OUTBOUND CTR</div>
+        <div class="kpi-label">AVERAGE OUTBOUND CTR</div>
         <div class="kpi-value" id="val-ctr">0.00%</div>
         <div class="kpi-subtext">Benchmark: &ge; 1.50%</div>
       </div>
     </section>
 
-    <!-- Top Performers Quad -->
+    <!-- Top Performers & Learning Quad -->
     <section class="triad-grid">
       <div class="triad-card">
         <div class="triad-header">
@@ -130,7 +154,7 @@
           <h3>TOP CATEGORY</h3>
         </div>
         <div class="triad-title">Pokémon &amp; TCG Collectibles</div>
-        <p class="triad-desc">Highest organic search intent and live break appeal.</p>
+        <p class="triad-desc">Highest search volume and collector unboxing engagement.</p>
         <div class="triad-badge">10 PINS MAPPED</div>
       </div>
 
@@ -140,126 +164,183 @@
           <h3>TOP HOOK ARCHETYPE</h3>
         </div>
         <div class="triad-title">Curiosity Gap &amp; Behind-the-Scenes</div>
-        <p class="triad-desc">High-contrast curiosity headlines maximize mobile CTR.</p>
+        <p class="triad-desc">High-contrast curiosity headlines drive maximum feed CTR.</p>
         <div class="triad-badge badge-amber">STOPPING POWER: HIGH</div>
       </div>
 
       <div class="triad-card">
         <div class="triad-header">
           <span class="triad-icon">🎨</span>
-          <h3>TOP TEMPLATES</h3>
+          <h3>TOP VISUAL TEMPLATES</h3>
         </div>
         <div class="triad-title">Template B (Bold) &amp; F (Mystery)</div>
-        <p class="triad-desc">Strong visual hierarchy optimized for Pinterest feeds.</p>
-        <div class="triad-badge badge-purple">1000 &times; 1500 PX PNG</div>
+        <p class="triad-desc">High contrast and glowing neon pills maximize stopping power.</p>
+        <div class="triad-badge badge-purple">1000 &times; 1500 PX</div>
       </div>
     </section>
 
-    <!-- Quick Start: First 5 Pins Box -->
+    <!-- Quick Action Queue: First 5 Pins -->
     <section class="two-col-grid">
       
-      <!-- Left: First 5 Pins -->
+      <!-- Left: First 5 Fast Upload List -->
       <div class="panel-card">
         <div class="panel-header">
           <div>
-            <h2>⚡ First 5 Priority Pins (Start Here)</h2>
-            <p>Publish these first for maximum initial CTR traction.</p>
+            <h2>⚡ Quick-Start: First 5 Priority Pins</h2>
+            <p>1-Click copy metadata to schedule on Pinterest in under 3 minutes.</p>
           </div>
           <span class="badge-count">5 PRIORITY PINS</span>
         </div>
+        
         <div class="pin-queue-list">
+          
+          <!-- Pin 28 -->
           <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-28</span>
-              <span class="queue-cat cat-deals">DEALS</span>
+            <div class="queue-header-row">
+              <div class="queue-meta">
+                <span class="queue-id">PIN-28</span>
+                <span class="queue-cat cat-deals">DEALS</span>
+                <span class="board-tag">Board: Deal Alerts &amp; Restocks</span>
+              </div>
+              <span class="queue-priority">#1 PRIORITY</span>
             </div>
             <div class="queue-title">What Happens When a Live Auction Starts at $1?</div>
-            <div class="queue-status">PRIORITY #1</div>
+            <div class="queue-actions-row">
+              <button class="btn-mini" onclick="copyText('What Happens When a Live Auction Starts at $1?', 'Title copied!')">Copy Title</button>
+              <button class="btn-mini" onclick="copyText('Fast-paced 15-second sudden death live bidding where auctions start at just $1 and anything can happen on stream.', 'Description copied!')">Copy Desc</button>
+              <button class="btn-mini" onclick="copyText('https://thequadguy.github.io/whatnot-finds/deals/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin28', 'URL copied!')">Copy URL</button>
+            </div>
           </div>
+
+          <!-- Pin 19 -->
           <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-19</span>
-              <span class="queue-cat cat-collectibles">COLLECTIBLES</span>
+            <div class="queue-header-row">
+              <div class="queue-meta">
+                <span class="queue-id">PIN-19</span>
+                <span class="queue-cat cat-collectibles">COLLECTIBLES</span>
+                <span class="board-tag">Board: Toys &amp; Collectible Figures</span>
+              </div>
+              <span class="queue-priority">#2 PRIORITY</span>
             </div>
             <div class="queue-title">Secret Chase Figures &amp; Art Toys Live</div>
-            <div class="queue-status">PRIORITY #2</div>
+            <div class="queue-actions-row">
+              <button class="btn-mini" onclick="copyText('Secret Chase Figures & Art Toys Live', 'Title copied!')">Copy Title</button>
+              <button class="btn-mini" onclick="copyText('Watch streamers open blind boxes, unveil secret chase figures, and inspect limited-edition vinyl collectibles live on camera.', 'Description copied!')">Copy Desc</button>
+              <button class="btn-mini" onclick="copyText('https://thequadguy.github.io/whatnot-finds/collectibles/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin19', 'URL copied!')">Copy URL</button>
+            </div>
           </div>
+
+          <!-- Pin 04 -->
           <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-04</span>
-              <span class="queue-cat cat-pokemon">POKÉMON</span>
+            <div class="queue-header-row">
+              <div class="queue-meta">
+                <span class="queue-id">PIN-04</span>
+                <span class="queue-cat cat-pokemon">POKÉMON</span>
+                <span class="board-tag">Board: Trading Card Unboxings</span>
+              </div>
+              <span class="queue-priority">#3 PRIORITY</span>
             </div>
             <div class="queue-title">Japanese Pokemon Cards: The Sets Worth Watching Live</div>
-            <div class="queue-status">PRIORITY #3</div>
+            <div class="queue-actions-row">
+              <button class="btn-mini" onclick="copyText('Japanese Pokemon Cards: The Sets Worth Watching Live', 'Title copied!')">Copy Title</button>
+              <button class="btn-mini" onclick="copyText('Discover exclusive Japanese Pokemon card sets, promo boxes, and high-class pack unboxings streamed live from verified independent collector hosts.', 'Description copied!')">Copy Desc</button>
+              <button class="btn-mini" onclick="copyText('https://thequadguy.github.io/whatnot-finds/pokemon/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin04', 'URL copied!')">Copy URL</button>
+            </div>
           </div>
+
+          <!-- Pin 02 -->
           <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-02</span>
-              <span class="queue-cat cat-pokemon">POKÉMON</span>
+            <div class="queue-header-row">
+              <div class="queue-meta">
+                <span class="queue-id">PIN-02</span>
+                <span class="queue-cat cat-pokemon">POKÉMON</span>
+                <span class="board-tag">Board: Trading Card Unboxings</span>
+              </div>
+              <span class="queue-priority">#4 PRIORITY</span>
             </div>
             <div class="queue-title">Where Collectors Find Vintage Pokemon Booster Packs</div>
-            <div class="queue-status">PRIORITY #4</div>
+            <div class="queue-actions-row">
+              <button class="btn-mini" onclick="copyText('Where Collectors Find Vintage Pokemon Booster Packs', 'Title copied!')">Copy Title</button>
+              <button class="btn-mini" onclick="copyText('Explore live streams where collectors unbox vintage WOTC booster packs and illustration rare singles on high-definition video.', 'Description copied!')">Copy Desc</button>
+              <button class="btn-mini" onclick="copyText('https://thequadguy.github.io/whatnot-finds/pokemon/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin02', 'URL copied!')">Copy URL</button>
+            </div>
           </div>
+
+          <!-- Pin 11 -->
           <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-11</span>
-              <span class="queue-cat cat-sneakers">SNEAKERS</span>
+            <div class="queue-header-row">
+              <div class="queue-meta">
+                <span class="queue-id">PIN-11</span>
+                <span class="queue-cat cat-sneakers">SNEAKERS</span>
+                <span class="board-tag">Board: Collector Tips &amp; Guides</span>
+              </div>
+              <span class="queue-priority">#5 PRIORITY</span>
             </div>
             <div class="queue-title">How to Inspect Sneaker Condition on Live Video</div>
-            <div class="queue-status">PRIORITY #5</div>
+            <div class="queue-actions-row">
+              <button class="btn-mini" onclick="copyText('How to Inspect Sneaker Condition on Live Video', 'Title copied!')">Copy Title</button>
+              <button class="btn-mini" onclick="copyText('Check outsole star patterns, tongue tags, factory box stamps, and heel drag close-up on stream before placing your bid.', 'Description copied!')">Copy Desc</button>
+              <button class="btn-mini" onclick="copyText('https://thequadguy.github.io/whatnot-finds/sneakers/?utm_source=pinterest&utm_medium=organic&utm_campaign=whatnot_referral&utm_content=pin11', 'URL copied!')">Copy URL</button>
+            </div>
           </div>
+
         </div>
+
         <div class="panel-footer">
-          <a href="../ready-to-post/csv/pinterest-final-upload-manifest.csv" download class="btn-link">📄 Download Complete 40-Pin Upload Manifest CSV &rarr;</a>
+          <a href="../ready-to-post/csv/pinterest-final-upload-manifest.csv" download class="btn-link">📄 Download Full 40-Pin Upload Manifest CSV &rarr;</a>
         </div>
       </div>
 
-      <!-- Right: Jake's Action Required -->
+      <!-- Right: Jake's Action Checklist & Compliance Notice -->
       <div class="panel-card">
         <div class="panel-header">
           <div>
-            <h2>📋 Jake's Quick Action Checklist</h2>
-            <p>100% human-approved publishing workflow.</p>
+            <h2>📋 Operational Checklist &amp; Status</h2>
+            <p>100% compliant human-in-the-loop workflow.</p>
           </div>
         </div>
+        
         <div class="checklist">
           <label class="check-item">
             <input type="checkbox" checked disabled>
             <div class="check-content">
-              <strong>All 40 Pins Rendered at 1000 &times; 1500 px</strong>
-              <span>Verified across 6 design templates with truthful discovery copy.</span>
+              <strong>All 40 Graphics Rendered (1000 &times; 1500 px)</strong>
+              <span>Verified in <code>pins/exports/</code> and <code>growth-engine/ready-to-post/images/</code>.</span>
             </div>
           </label>
           <label class="check-item">
             <input type="checkbox">
             <div class="check-content">
-              <strong>Upload First 5 Priority Pins</strong>
-              <span>Open <code>PINTEREST_FIRST_5.md</code> and upload Pins 28, 19, 04, 02, 11 to your boards.</span>
+              <strong>Upload First 5 Priority Pins to Pinterest</strong>
+              <span>Copy-paste Pins 28, 19, 04, 02, and 11 into your Pinterest boards.</span>
             </div>
           </label>
           <label class="check-item">
             <input type="checkbox">
             <div class="check-content">
-              <strong>Follow 30-Day Publishing Plan (1–2 Pins / Day)</strong>
-              <span>Schedule the remaining 35 Pins according to <code>growth-engine/PINTEREST_30_DAY_PUBLISHING_PLAN.md</code>.</span>
+              <strong>Follow 30-Day Publishing Plan (1–2 Pins/Day)</strong>
+              <span>Follow the schedule in <code>growth-engine/PINTEREST_30_DAY_PUBLISHING_PLAN.md</code>.</span>
             </div>
           </label>
           <label class="check-item">
             <input type="checkbox">
             <div class="check-content">
-              <strong>Drop Analytics CSV Weekly &amp; Run Engine</strong>
-              <span>After 5–7 days, drop Pinterest CSV export into <code>manual-data/</code> and run <code>./growth-engine/run.sh</code>.</span>
+              <strong>Weekly Pinterest Analytics CSV Import</strong>
+              <span>Drop export into <code>growth-engine/input/manual-data/</code> &amp; run <code>./growth-engine/weekly.sh</code>.</span>
             </div>
           </label>
         </div>
+
         <div class="compliance-box">
-          <strong>🛡️ Independent Account Notice:</strong> Account operates as an independent discovery guide ("Whatnot Finds") with zero unsupported claims.
+          <strong>🛡️ Compliance &amp; Disclosure Notice:</strong> Account operates as an independent discovery guide ("Whatnot Finds") with zero unsupported claims. All destination URLs use unique tracking tags (`utm_content=pin01` through `pin40`).
         </div>
       </div>
 
     </section>
 
   </main>
+
+  <div id="toast" class="toast">Copied to clipboard!</div>
 
   <script src="data.js"></script>
   <script>
@@ -276,9 +357,18 @@
         badge.className = 'data-mode-badge data-mode-real';
         document.getElementById('sub-impressions').innerText = 'Live Tracked Organic Views';
       } else {
-        badge.innerText = 'NO DATA YET (Awaiting Pinterest Upload & Analytics)';
+        badge.innerText = 'NO DATA YET (Awaiting Pinterest Import)';
         badge.className = 'data-mode-badge data-mode-none';
       }
+    }
+
+    function copyText(text, msg) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('toast');
+        toast.innerText = msg || 'Copied to clipboard!';
+        toast.classList.add('toast-show');
+        setTimeout(() => toast.classList.remove('toast-show'), 2000);
+      });
     }
   </script>
 </body>
