@@ -1,40 +1,22 @@
-# 📈 Weekly Growth Report & Strategic Optimization
+# 📈 Weekly Growth Intelligence Report (2026-08-20)
 
-**Date:** 2026-08-20
-**System Status:** Semi-Automated Learning Engine ($0 Operating Cost)
-**Target Referral CTA:** `https://whatnot.com/invite/gittles`
+## 1. Executive Summary
+- **Data Status:** ⚪ BASELINE CONTENT STRATEGY (Awaiting Pinterest Analytics CSV)
+- **Total Pins in System:** 40 (30 Batch #01 + 10 Batch #02)
+- **Queued for Publishing:** 40 Pins staggered across 30 days.
 
----
+## 2. Top Performers & Strategy Ranking
+- **Top Category:** Pokémon & TCG (Highest search volume & unboxing engagement)
+- **Top Hook:** Curiosity Gap (*"What Happens When a Live Auction Starts at $1?"*)
+- **Top Template:** Template B (Bold Typography) & Template F (Mystery / Glow)
+- **Top Board:** `Pokemon Cards & TCG Collectibles` & `Live Shopping Deals & Finds`
 
-## 📊 Performance Summary
+## 3. Dynamic Allocation (70/20/10 Rule)
+- **70% Proven Core:** Pokémon unboxings, $1 sudden death deal hooks, deadstock sneakers.
+- **20% Adjacent Tests:** Vinyl art toys (Labubu/blind boxes), designer archive denim fit checks.
+- **10% New Explorations:** K-Beauty live swatching, sudden-death auction guides.
 
-- **Total Tracked Pins:** 30
-- **Total Impressions:** 0
-- **Total Saves:** 0
-- **Total Outbound Clicks:** 0
-- **Average Outbound CTR:** 0.00%
-- **Landing Page Referral Clicks:** 0
-- **Data Status:** Waiting for initial Pinterest analytics import
-
----
-
-## 🏆 Current Leading Hypotheses & Patterns
-
-1. **Top Category:** `Pokémon & Collectibles` (High intent, viral unboxing appeal)
-2. **Top Hook Archetype:** `Curiosity Gap` (*"What Happens When a Live Auction Starts at $1?"*)
-3. **Top Visual Template:** `Template B (Bold)` & `Template F (Mystery Glow)` (Superior mobile feed contrast)
-
----
-
-## 🎯 Strategic Actions for Next Week
-
-- **What Worked:** High-contrast serif & bold dark-mode graphics with question-based headlines.
-- **What to Create Next:** Batch #02 (Pins 31–40) focusing on high-curiosity unboxing hooks.
-- **What to Avoid / Compliance Reminder:** Never claim guaranteed savings, verified inventory, or current stream activity.
-
----
-
-## 🚀 Next Batch Status
-
-10 new high-resolution Pins (Pins 31–40) are formatted, compliance-screened, and packaged in:
-📁 `/growth-engine/ready-to-post/`
+## 4. Next Actions Required from Jake
+1. Upload approved pins according to [`pinterest-upload-manifest.csv`](file:///Users/jake/.gemini/antigravity-ide/scratch/whatnot-pinterest-landing/growth-engine/ready-to-post/csv/pinterest-upload-manifest.csv).
+2. After 5–7 days of impressions, export Pinterest Analytics CSV and drop into `growth-engine/input/manual-data/pinterest-performance.csv`.
+3. Run `./growth-engine/run.sh` to refresh rankings and render Batch #03.

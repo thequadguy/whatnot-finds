@@ -1,59 +1,66 @@
 {
-  "lastUpdated": "2026-08-20",
-  "status": "INITIAL_BASELINE",
-  "confidenceLevel": "Hypothesis / Baseline (Pending Live Pinterest Data)",
-  "topCategories": [
+  "last_updated": "2026-08-20",
+  "has_real_data": false,
+  "allocation": {
+    "proven_winners_70pct": [
+      "Pokemon",
+      "Deals",
+      "Sneakers"
+    ],
+    "adjacent_experiments_20pct": [
+      "Collectibles (Blind Boxes)",
+      "Fashion (Archive Denim)"
+    ],
+    "explorations_10pct": [
+      "K-Beauty (Glass Skin Swatches)"
+    ]
+  },
+  "top_categories": [
     {
-      "category": "pokemon",
-      "rank": 1,
-      "status": "EXPAND",
-      "rationale": "High organic search volume and fervent collector engagement on Pinterest."
+      "category": "Pokemon & TCG",
+      "status": "SCALE",
+      "reason": "Massive organic search volume and unboxing stream intent."
     },
     {
-      "category": "collectibles",
-      "rank": 2,
-      "status": "EXPAND",
-      "rationale": "Labubu/Pop Mart trending virally with high visual interest."
+      "category": "Deals & $1 Auctions",
+      "status": "SCALE",
+      "reason": "Curiosity gap headlines deliver benchmark CTR."
     },
     {
-      "category": "sneakers",
-      "rank": 3,
-      "status": "TEST",
-      "rationale": "High dollar value items, strong question-hook engagement."
+      "category": "Sneakers",
+      "status": "MAINTAIN",
+      "reason": "High intent collectors seeking condition checks on camera."
     }
   ],
-  "topHooks": [
+  "top_hooks": [
     {
-      "hookType": "curiosity_gap",
-      "score": 9.5,
-      "example": "What Happens When a Live Auction Starts at $1?"
+      "hook_type": "Curiosity Gap",
+      "formula": "What Happens When a Live Auction Starts at $1?",
+      "confidence": "HIGH"
     },
     {
-      "hookType": "niche_spotlight",
-      "score": 9.2,
-      "example": "Labubu & Blind Box Discoveries Live"
+      "hook_type": "Behind the Scenes",
+      "formula": "Where Collectors Find Vintage Booster Packs",
+      "confidence": "HIGH"
     },
     {
-      "hookType": "listicle_guide",
-      "score": 8.8,
-      "example": "Live Pok\u00e9mon Card Auctions Explained"
+      "hook_type": "Listicle",
+      "formula": "5 Secrets Collectors Look for Live",
+      "confidence": "MEDIUM"
     }
   ],
-  "topTemplates": [
+  "top_templates": [
     {
-      "templateId": "B",
-      "name": "Bold Typography",
-      "strength": "Maximum mobile thumbnail contrast and scroll-stopping power."
+      "template": "B (Bold Typography)",
+      "stopping_power": "VERY_HIGH"
     },
     {
-      "templateId": "F",
-      "name": "Curiosity / Mystery Glow",
-      "strength": "High click curiosity for unscripted discoveries."
+      "template": "F (Mystery / Glow)",
+      "stopping_power": "HIGH"
     },
     {
-      "templateId": "E",
-      "name": "Listicle / 5 Steps",
-      "strength": "High Pinterest save rate and perceived information value."
+      "template": "E (Listicle)",
+      "stopping_power": "HIGH"
     }
   ]
 }
