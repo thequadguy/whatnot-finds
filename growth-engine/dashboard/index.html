@@ -16,18 +16,18 @@
     <div class="nav-left">
       <div class="engine-logo">
         <span class="logo-dot"></span>
-        <span>GROWTH ENGINE</span>
+        <span>WHATNOT FINDS • GROWTH ENGINE</span>
       </div>
-      <span class="version-badge">v2.0 • Semi-Autonomous</span>
-      <span class="data-mode-badge" id="data-status-badge">NO DATA YET (Awaiting Pinterest Import)</span>
+      <span class="version-badge">v3.0 • Semi-Autonomous</span>
+      <span class="data-mode-badge data-mode-none" id="data-status-badge">NO DATA YET (Awaiting Pinterest Upload &amp; Analytics)</span>
     </div>
     <div class="nav-right">
       <div class="status-indicator">
         <span class="pulse-dot"></span>
-        <span>System Active • $0 Operating Cost</span>
+        <span>40 Pins Ready • $0 Operating Cost</span>
       </div>
       <a href="https://whatnot.com/invite/gittles" target="_blank" rel="noopener noreferrer" class="referral-pill">
-        <span>Target Referral:</span>
+        <span>Referral Target:</span>
         <code>whatnot.com/invite/gittles</code>
       </a>
     </div>
@@ -38,250 +38,222 @@
     <!-- Hero Header -->
     <header class="dash-header">
       <div>
-        <h1>Pinterest → Whatnot Growth Intelligence</h1>
-        <p class="subtitle">Data-driven performance tracking, winning pattern detection, and autonomous content generation.</p>
+        <h1>Pinterest → Whatnot Operating System</h1>
+        <p class="subtitle">Independent Discovery Guide • 40 High-CTR Graphics • Semi-Automated Learning Pipeline</p>
       </div>
       <div class="header-actions">
-        <button class="btn btn-secondary" onclick="openImportModal()">📥 Import CSV Data</button>
-        <button class="btn btn-primary" onclick="alert('Run ./growth-engine/run.sh in your terminal to execute the full pipeline.')">⚡ Run Engine Pipeline</button>
+        <a href="../ready-to-post/csv/pinterest-final-upload-manifest.csv" download class="btn btn-secondary">📥 Download Manifest CSV</a>
+        <button class="btn btn-primary" onclick="alert('Run ./growth-engine/run.sh in your terminal to execute data import, analysis, and rendering.')">⚡ Run Engine Pipeline</button>
       </div>
     </header>
 
-    <!-- Visual Human Approval Pipeline -->
+    <!-- Lifecycle Status Progression Bar -->
     <section class="pipeline-section">
-      <div class="pipeline-title">🛡️ SEMI-AUTOMATED HUMAN-IN-THE-LOOP WORKFLOW</div>
+      <div class="pipeline-title">📌 PIN LIFECYCLE &amp; HUMAN-IN-THE-LOOP APPROVAL PIPELINE</div>
       <div class="pipeline-track">
         <div class="pipeline-step step-complete">
           <div class="step-num">1</div>
-          <div class="step-label">GENERATED</div>
-        </div>
-        <div class="pipeline-arrow">&rarr;</div>
-        <div class="pipeline-step step-complete">
-          <div class="step-num">2</div>
-          <div class="step-label">QA CHECK</div>
+          <div class="step-label">READY (40 Pins)</div>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-step step-active">
+          <div class="step-num">2</div>
+          <div class="step-label">UPLOADED (0)</div>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
           <div class="step-num">3</div>
-          <div class="step-label">READY TO REVIEW</div>
+          <div class="step-label">SCHEDULED</div>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
-        <div class="pipeline-step step-human">
+        <div class="pipeline-step">
           <div class="step-num">4</div>
-          <div class="step-label">HUMAN APPROVAL</div>
-        </div>
-        <div class="pipeline-arrow">&rarr;</div>
-        <div class="pipeline-step">
-          <div class="step-num">5</div>
-          <div class="step-label">READY TO POST</div>
-        </div>
-        <div class="pipeline-arrow">&rarr;</div>
-        <div class="pipeline-step">
-          <div class="step-num">6</div>
           <div class="step-label">PUBLISHED</div>
         </div>
         <div class="pipeline-arrow">&rarr;</div>
         <div class="pipeline-step">
-          <div class="step-num">7</div>
-          <div class="step-label">ANALYTICS</div>
-        </div>
-        <div class="pipeline-arrow">&rarr;</div>
-        <div class="pipeline-step">
-          <div class="step-num">8</div>
-          <div class="step-label">LEARNING</div>
+          <div class="step-num">5</div>
+          <div class="step-label">ANALYTICS &amp; LEARNING</div>
         </div>
       </div>
     </section>
 
     <!-- KPI Summary Grid -->
     <section class="kpi-grid">
-      <div class="kpi-card">
+      <div class="kpi-card highlight-brand">
         <div class="kpi-label">TOTAL PINS CREATED</div>
         <div class="kpi-value" id="val-total-pins">40</div>
         <div class="kpi-subtext">30 Batch #01 + 10 Batch #02</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">PINS AWAITING APPROVAL</div>
-        <div class="kpi-value" style="color: var(--brand-amber);">10</div>
-        <div class="kpi-subtext">Batch #02 in Ready Queue</div>
+        <div class="kpi-label">READY FOR MANUAL UPLOAD</div>
+        <div class="kpi-value" style="color: var(--brand-emerald);">40</div>
+        <div class="kpi-subtext">Manifest &amp; Guides Generated</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">TOTAL IMPRESSIONS</div>
+        <div class="kpi-label">CURRENTLY PUBLISHED</div>
+        <div class="kpi-value" style="color: var(--brand-amber);">0</div>
+        <div class="kpi-subtext">Awaiting Pinterest Upload</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">PINTEREST IMPRESSIONS</div>
         <div class="kpi-value" id="val-impressions">0</div>
         <div class="kpi-subtext" id="sub-impressions">No data yet</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">TOTAL SAVES</div>
+        <div class="kpi-label">PINTEREST SAVES</div>
         <div class="kpi-value" id="val-saves">0</div>
         <div class="kpi-subtext">No data yet</div>
       </div>
-      <div class="kpi-card">
-        <div class="kpi-label">OUTBOUND CLICKS</div>
-        <div class="kpi-value" id="val-clicks">0</div>
-        <div class="kpi-subtext">No data yet</div>
-      </div>
       <div class="kpi-card highlight-card">
-        <div class="kpi-label">AVERAGE OUTBOUND CTR</div>
+        <div class="kpi-label">OUTBOUND CTR</div>
         <div class="kpi-value" id="val-ctr">0.00%</div>
         <div class="kpi-subtext">Benchmark: &ge; 1.50%</div>
       </div>
-      <div class="kpi-card highlight-brand">
-        <div class="kpi-label">WHATNOT REFERRAL CLICKS</div>
-        <div class="kpi-value" id="val-referrals">0</div>
-        <div class="kpi-subtext">No data yet</div>
-      </div>
     </section>
 
-    <!-- Intelligence Quad (Best Category, Hook, Template, Best Pin) -->
+    <!-- Top Performers Quad -->
     <section class="triad-grid">
       <div class="triad-card">
         <div class="triad-header">
-          <span class="triad-icon">🏆</span>
-          <h3>BEST CATEGORY</h3>
+          <span class="triad-icon">⭐</span>
+          <h3>TOP PRIORITY PIN</h3>
         </div>
-        <div class="triad-title" id="val-top-category">Pokémon &amp; TCG</div>
-        <p class="triad-desc">Highest organic search volume and collector unboxing engagement.</p>
-        <div class="triad-badge">STATUS: EXPAND (30% Allocation)</div>
+        <div class="triad-title">Pin #28 (Deals)</div>
+        <p class="triad-desc"><em>"What Happens When a Live Auction Starts at $1?"</em></p>
+        <div class="triad-badge badge-emerald">PRIORITY #1 (DAY 1)</div>
+      </div>
+
+      <div class="triad-card">
+        <div class="triad-header">
+          <span class="triad-icon">🏆</span>
+          <h3>TOP CATEGORY</h3>
+        </div>
+        <div class="triad-title">Pokémon &amp; TCG Collectibles</div>
+        <p class="triad-desc">Highest organic search intent and live break appeal.</p>
+        <div class="triad-badge">10 PINS MAPPED</div>
       </div>
 
       <div class="triad-card">
         <div class="triad-header">
           <span class="triad-icon">🎯</span>
-          <h3>BEST HOOK ARCHETYPE</h3>
+          <h3>TOP HOOK ARCHETYPE</h3>
         </div>
-        <div class="triad-title" id="val-top-hook">Curiosity Gap ($1 Start)</div>
-        <p class="triad-desc"><em>"What Happens When a Live Auction Starts at $1?"</em> drives maximum CTR.</p>
-        <div class="triad-badge badge-amber">SCORE: 9.5 / 10</div>
+        <div class="triad-title">Curiosity Gap &amp; Behind-the-Scenes</div>
+        <p class="triad-desc">High-contrast curiosity headlines maximize mobile CTR.</p>
+        <div class="triad-badge badge-amber">STOPPING POWER: HIGH</div>
       </div>
 
       <div class="triad-card">
         <div class="triad-header">
           <span class="triad-icon">🎨</span>
-          <h3>BEST VISUAL TEMPLATE</h3>
+          <h3>TOP TEMPLATES</h3>
         </div>
-        <div class="triad-title" id="val-top-template">Template B (Bold) &amp; F (Mystery)</div>
-        <p class="triad-desc">High contrast and vibrant glowing pills maximize mobile feed stopping power.</p>
-        <div class="triad-badge badge-purple">CONTRAST: OPTIMAL</div>
-      </div>
-
-      <div class="triad-card">
-        <div class="triad-header">
-          <span class="triad-icon">⭐</span>
-          <h3>BEST INDIVIDUAL PIN</h3>
-        </div>
-        <div class="triad-title">Pin #28 (Deals)</div>
-        <p class="triad-desc"><em>"What Happens When a Live Auction Starts at $1?"</em></p>
-        <div class="triad-badge badge-emerald">TOP CANDIDATE</div>
+        <div class="triad-title">Template B (Bold) &amp; F (Mystery)</div>
+        <p class="triad-desc">Strong visual hierarchy optimized for Pinterest feeds.</p>
+        <div class="triad-badge badge-purple">1000 &times; 1500 PX PNG</div>
       </div>
     </section>
 
-    <!-- Next Experiment Recommendation Box -->
-    <section class="experiment-banner">
-      <div class="exp-icon">🧪</div>
-      <div class="exp-body">
-        <strong>Next Recommended Test (EXP-CTA-001):</strong> Test headline variant <em>"Explore Live Stream Deals"</em> vs <em>"Explore Whatnot"</em> on the primary landing hub to compare referral click-through conversion rates once live traffic begins.
-      </div>
-    </section>
-
-    <!-- Split View: Ready-to-Post Queue & Action Checklist -->
+    <!-- Quick Start: First 5 Pins Box -->
     <section class="two-col-grid">
       
-      <!-- Left: Ready-to-Post Queue -->
+      <!-- Left: First 5 Pins -->
       <div class="panel-card">
         <div class="panel-header">
           <div>
-            <h2>📦 Content Queue — Batch #02 (Pins 31–40)</h2>
-            <p>100% compliant evergreen graphics rendered at 1000 &times; 1500 px.</p>
+            <h2>⚡ First 5 Priority Pins (Start Here)</h2>
+            <p>Publish these first for maximum initial CTR traction.</p>
           </div>
-          <span class="badge-count">10 PINS READY</span>
+          <span class="badge-count">5 PRIORITY PINS</span>
         </div>
-        <div class="pin-queue-list" id="pin-queue">
+        <div class="pin-queue-list">
           <div class="queue-item">
             <div class="queue-meta">
-              <span class="queue-id">PIN-31</span>
-              <span class="queue-cat cat-pokemon">POKÉMON</span>
+              <span class="queue-id">PIN-28</span>
+              <span class="queue-cat cat-deals">DEALS</span>
             </div>
-            <div class="queue-title">5 Secrets Pokémon Collectors Look for Live</div>
-            <div class="queue-status">READY_TO_REVIEW</div>
+            <div class="queue-title">What Happens When a Live Auction Starts at $1?</div>
+            <div class="queue-status">PRIORITY #1</div>
           </div>
           <div class="queue-item">
             <div class="queue-meta">
-              <span class="queue-id">PIN-32</span>
-              <span class="queue-cat cat-sneakers">SNEAKERS</span>
-            </div>
-            <div class="queue-title">What Sneakerheads Find in Live Stream Auctions</div>
-            <div class="queue-status">READY_TO_REVIEW</div>
-          </div>
-          <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-33</span>
-              <span class="queue-cat cat-fashion">FASHION</span>
-            </div>
-            <div class="queue-title">Vintage Leather &amp; Designer Denim Live</div>
-            <div class="queue-status">READY_TO_REVIEW</div>
-          </div>
-          <div class="queue-item">
-            <div class="queue-meta">
-              <span class="queue-id">PIN-34</span>
+              <span class="queue-id">PIN-19</span>
               <span class="queue-cat cat-collectibles">COLLECTIBLES</span>
             </div>
             <div class="queue-title">Secret Chase Figures &amp; Art Toys Live</div>
-            <div class="queue-status">READY_TO_REVIEW</div>
+            <div class="queue-status">PRIORITY #2</div>
           </div>
           <div class="queue-item">
             <div class="queue-meta">
-              <span class="queue-id">PIN-35</span>
-              <span class="queue-cat cat-beauty">BEAUTY</span>
+              <span class="queue-id">PIN-04</span>
+              <span class="queue-cat cat-pokemon">POKÉMON</span>
             </div>
-            <div class="queue-title">Dewy Glass Skin &amp; Barrier Care Swatches</div>
-            <div class="queue-status">READY_TO_REVIEW</div>
+            <div class="queue-title">Japanese Pokemon Cards: The Sets Worth Watching Live</div>
+            <div class="queue-status">PRIORITY #3</div>
+          </div>
+          <div class="queue-item">
+            <div class="queue-meta">
+              <span class="queue-id">PIN-02</span>
+              <span class="queue-cat cat-pokemon">POKÉMON</span>
+            </div>
+            <div class="queue-title">Where Collectors Find Vintage Pokemon Booster Packs</div>
+            <div class="queue-status">PRIORITY #4</div>
+          </div>
+          <div class="queue-item">
+            <div class="queue-meta">
+              <span class="queue-id">PIN-11</span>
+              <span class="queue-cat cat-sneakers">SNEAKERS</span>
+            </div>
+            <div class="queue-title">How to Inspect Sneaker Condition on Live Video</div>
+            <div class="queue-status">PRIORITY #5</div>
           </div>
         </div>
         <div class="panel-footer">
-          <a href="../ready-to-post/csv/pinterest-upload-manifest.csv" download class="btn-link">📄 Download Upload Manifest CSV &rarr;</a>
+          <a href="../ready-to-post/csv/pinterest-final-upload-manifest.csv" download class="btn-link">📄 Download Complete 40-Pin Upload Manifest CSV &rarr;</a>
         </div>
       </div>
 
-      <!-- Right: Action Required & Manual Checklist -->
+      <!-- Right: Jake's Action Required -->
       <div class="panel-card">
         <div class="panel-header">
           <div>
-            <h2>📋 Jake's Action Required Checklist</h2>
-            <p>Human approval gate ensuring 100% compliant Pinterest account operation.</p>
+            <h2>📋 Jake's Quick Action Checklist</h2>
+            <p>100% human-approved publishing workflow.</p>
           </div>
         </div>
         <div class="checklist">
           <label class="check-item">
             <input type="checkbox" checked disabled>
             <div class="check-content">
-              <strong>Batch #01 (Pins 01–30) Generated &amp; Verified</strong>
-              <span>30 PNGs rendered at 1000 &times; 1500 px with compliant evergreen copy.</span>
+              <strong>All 40 Pins Rendered at 1000 &times; 1500 px</strong>
+              <span>Verified across 6 design templates with truthful discovery copy.</span>
             </div>
           </label>
           <label class="check-item">
             <input type="checkbox">
             <div class="check-content">
-              <strong>Review &amp; Approve Ready-to-Post Batch #02 (Pins 31–40)</strong>
-              <span>Open <code>/growth-engine/ready-to-post/</code> and review images and CSV.</span>
+              <strong>Upload First 5 Priority Pins</strong>
+              <span>Open <code>PINTEREST_FIRST_5.md</code> and upload Pins 28, 19, 04, 02, 11 to your boards.</span>
             </div>
           </label>
           <label class="check-item">
             <input type="checkbox">
             <div class="check-content">
-              <strong>Schedule Approved Pins on Pinterest</strong>
-              <span>Upload images to your corresponding Pinterest boards using the manifest CSV.</span>
+              <strong>Follow 30-Day Publishing Plan (1–2 Pins / Day)</strong>
+              <span>Schedule the remaining 35 Pins according to <code>growth-engine/PINTEREST_30_DAY_PUBLISHING_PLAN.md</code>.</span>
             </div>
           </label>
           <label class="check-item">
             <input type="checkbox">
             <div class="check-content">
-              <strong>Weekly Pinterest Analytics CSV Import</strong>
-              <span>Export impressions &amp; clicks from Pinterest Analytics and drop into manual-data folder.</span>
+              <strong>Drop Analytics CSV Weekly &amp; Run Engine</strong>
+              <span>After 5–7 days, drop Pinterest CSV export into <code>manual-data/</code> and run <code>./growth-engine/run.sh</code>.</span>
             </div>
           </label>
         </div>
         <div class="compliance-box">
-          <strong>🛡️ Compliance Reminder:</strong> All generated pins and landing pages are strictly evergreen and truthful with zero unsupported authenticity or price guarantee claims.
+          <strong>🛡️ Independent Account Notice:</strong> Account operates as an independent discovery guide ("Whatnot Finds") with zero unsupported claims.
         </div>
       </div>
 
@@ -296,23 +268,17 @@
       document.getElementById('val-total-pins').innerText = d.totalPins || 40;
       document.getElementById('val-impressions').innerText = (d.totalImpressions || 0).toLocaleString();
       document.getElementById('val-saves').innerText = (d.totalSaves || 0).toLocaleString();
-      document.getElementById('val-clicks').innerText = (d.totalOutboundClicks || 0).toLocaleString();
       document.getElementById('val-ctr').innerText = (d.averageCtr || 0).toFixed(2) + '%';
-      document.getElementById('val-referrals').innerText = (d.referralClicks || 0).toLocaleString();
       
       const badge = document.getElementById('data-status-badge');
       if (d.totalImpressions > 0 && !d.isDemoData) {
         badge.innerText = 'REAL DATA (Live Pinterest Analytics)';
         badge.className = 'data-mode-badge data-mode-real';
-        document.getElementById('sub-impressions').innerText = 'Live Tracked Organic Pinterest Views';
+        document.getElementById('sub-impressions').innerText = 'Live Tracked Organic Views';
       } else {
-        badge.innerText = 'NO DATA YET (Awaiting Pinterest Import)';
+        badge.innerText = 'NO DATA YET (Awaiting Pinterest Upload & Analytics)';
         badge.className = 'data-mode-badge data-mode-none';
       }
-    }
-
-    function openImportModal() {
-      alert("To import Pinterest analytics data:\n\n1. Export your analytics from Pinterest Business.\n2. Save as growth-engine/input/manual-data/pinterest-performance.csv\n3. Run ./growth-engine/run.sh in terminal.");
     }
   </script>
 </body>

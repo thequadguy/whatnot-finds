@@ -8,5 +8,5 @@ window.GROWTH_ENGINE_DATA = {
   "isDemoData": false,
   "approvedCount": 30,
   "readyForReviewCount": 10,
-  "lastSync": "2026-08-20T21:27:16.721341"
+  "lastSync": "2026-08-21T13:30:20.479553"
 };
