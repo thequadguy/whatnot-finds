@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourusername.github.io/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/pokemon/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/pokemon/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/sneakers/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/sneakers/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/fashion/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/fashion/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/collectibles/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/collectibles/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/beauty/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/beauty/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/vintage/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/vintage/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourusername.github.io/deals/</loc>
+    <loc>https://thequadguy.github.io/whatnot-finds/deals/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
